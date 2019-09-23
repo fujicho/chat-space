@@ -13,6 +13,17 @@ Things you may want to cover:
 
 * Database creation
 # Qiita DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|username|string|null; false|
+### Association
+-has_many :messages
+-has_many :users_groups
+-has_many :groups,throgh:  :posts_tags
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
