@@ -12,8 +12,8 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
-
-# Qiita DB設計
+# Qiita DB設定
+# Qiita DB設計
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
