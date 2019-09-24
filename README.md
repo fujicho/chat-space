@@ -12,7 +12,7 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
-# Qiita DB設計
+# Chat-space DB設計
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -48,6 +48,7 @@ Things you may want to cover:
 |text|text||
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
 - belongs_to :group
