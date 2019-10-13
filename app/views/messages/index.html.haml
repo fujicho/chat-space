@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+%html
+%head
+  %title Chatspace
+  %link{:href => "style.css", :rel => "stylesheet"}/
+
+
+  .side-bar
+    .header
+      %h3.header__name
+        ユーザーネーム
+      %ul.header__icon
+        %li.list
+          = link_to 'aaa' do
+            = fa_icon 'pencil-square-o', class: 'icon'
+        %li.list
+          = link_to 'aaa' do
+            = fa_icon 'cog', class: 'icon'
+    .groups
+      .group
+        .group__name
+          グループ名
+        .group__message
+          メッセージ
+
+
+
+
+
+
+  .right-contents
+    .topheader
+      .left-header
+        .left-header__title
+          test-group
+        %ul.left-header__members
+          Member :  
+          %li.member
+          　member
+          %li.member
+          　member
+      .right-header
+        .right_header__button
+          Edit
+    .messages
+      .message
+        .top-message
+          .top-message__user-name
+            test-user
+          .top-message__date
+            2019/10/07(Mon) 00:00:00
+        .bottom-message
+          .bottom-message__content
+            こんぬつわ〜
+    .form
+      %form
+        %input.form__message
+        .form__right
+          %label.form__right__icon
+            = fa_icon 'picture-o', class: 'icon'
+            %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}
