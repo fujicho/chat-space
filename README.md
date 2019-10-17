@@ -33,7 +33,7 @@ Things you may want to cover:
 - has_many :users, through:  users_groups
 - has_many :messages
 
-## users_groupsテーブル
+## groupes_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user|references|null: false, foreign_key: true|
