@@ -8,10 +8,7 @@ class GroupsController < ApplicationController
     @group = Group.new
     @group.users << current_user
   end
-
-  def edit
-  end
-
+  
   def create
     @group = Group.new(group_params)
     if @group.save
@@ -19,6 +16,9 @@ class GroupsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def edit
   end
 
   def update
