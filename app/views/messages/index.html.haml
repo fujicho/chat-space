@@ -15,15 +15,7 @@
       .right_header__button
         Edit
   .messages
-    .message
-      .top-message
-        .top-message__user-name
-          test-user
-        .top-message__date
-          2019/10/07(Mon) 00:00:00
-      .bottom-message
-        .bottom-message__content
-          こんぬつわ〜
+    =render @messages
   .form
     = form_for [@group,@message] do |f|
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
