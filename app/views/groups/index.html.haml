@@ -1,57 +1,36 @@
-.side-bar
-  .header
-    %h3.header__name
-      = current_user.name
-    %ul.header__icon
-      %li.list
-        = link_to new_group_path do
-          = fa_icon 'pencil-square-o', class: 'icon'
-      %li.list
-        = link_to edit_user_path(current_user) do
-          = fa_icon 'cog', class: 'icon'
-  .groups
-    - current_user.groups.each do |group|
-      .group
-        = link_to group_messages_path(group) do
-          .group__name
-            = group.name
-          .group__message
-            メッセージはまだありません。
+.wrapper
 
+  = render 'shared/side_bar'
 
-
-
-
-
-.right-contents
-  .topheader
-    .left-header
-      .left-header__title
-        test-group
-      %ul.left-header__members
-        Member :  
-        %li.member
-        　member
-        %li.member
-        　member
-    .right-header
-      .right_header__button
-        Edit
-  .messages
-    .message
-      .top-message
-        .top-message__user-name
-          test-user
-        .top-message__date
-          2019/10/07(Mon) 00:00:00
-      .bottom-message
-        .bottom-message__content
-          こんぬつわ〜
-  .form
-    = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-      .form__right
-        = f.label :image, class: 'form__right__icon' do
-          = fa_icon 'picture-o', class: 'icon'
-          = f.file_field :image, class: 'hidden'
-      = f.submit 'Send',class: 'form_submit'
+  -# .right-contents
+  -# .topheader
+  -#   .left-header
+  -#     .left-header__title
+  -#       test-group
+  -#     %ul.left-header__members
+  -#       Member :  
+  -#       %li.member
+  -#       　member
+  -#       %li.member
+  -#       　member
+  -#   .right-header
+  -#     .right_header__button
+  -#       Edit
+  -# .messages
+  -#   .message
+  -#     .top-message
+  -#       .top-message__user-name
+  -#         test-user
+  -#       .top-message__date
+  -#         2019/10/07(Mon) 00:00:00
+  -#     .bottom-message
+  -#       .bottom-message__content
+  -#         こんぬつわ〜
+  -# .form
+  -#   = form_for [@group,@message] do |f|
+  -#     = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+  -#     .form__right
+  -#       = f.label :image, class: 'form__right__icon' do
+  -#         = fa_icon 'picture-o', class: 'icon'
+  -#       = f.file_field :image, class: 'hidden'
+  -#     = f.submit 'Send',class: 'form_submit'
