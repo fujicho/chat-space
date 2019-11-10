@@ -12,6 +12,6 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1' #例 'ap-northeast-1'
   }
 
-  config.fog_directory  = 'fujiko-chatspce-image'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/fujiko-chatspace-image'
+  config.fog_directory  = 'fujiko-chatspce-img'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/fujiko-chatspace-img'
 end
