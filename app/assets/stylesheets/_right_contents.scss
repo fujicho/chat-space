@@ -25,7 +25,9 @@
         }
       }
     }
-    .right-header{
+    .right-header a{
+        background-color:white;
+        box-sizing: border-box;
         border: 1px solid $light_blue;
         color: $light_blue;
         float: right;
@@ -33,6 +35,8 @@
         line-height: 40px;
         margin-top: 28px;
         padding: 0 20px;
+        text-decoration: none;
+    }
     }
   }
 
@@ -105,4 +109,3 @@
         padding: 0 30px;
       }
   }
-}
