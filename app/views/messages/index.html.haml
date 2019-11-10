@@ -18,7 +18,7 @@
     =render @messages
   .form
     = form_for [@group,@message] do |f|
-      = f.text_field :content, class: 'form__message', placeholder: 'hoge a message' ,value: ''
+      = f.text_field :content, class: 'form__message', placeholder: 'send a message' ,value: ''
       .form__right
         = f.label :image, class: 'form__right__icon' do
           = fa_icon 'picture-o', class: 'icon'
